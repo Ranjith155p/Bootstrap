@@ -1,0 +1,49 @@
+:root {
+    --gray: #E9EDF2;
+    --white: #ffffff;
+    --primary-text: #2B3674;
+    --border: #B2BAD0;
+    --blue: #4318FF;
+
+
+}
+*{
+    font-size: 14px;
+}
+.small-text{
+    font-size: 12px;
+
+}
+#Upload-file {
+    display: none;
+}
+
+.formarea {
+    background-color: var(--white);
+    color: var(--primary-text)
+}
+
+.upload-area {
+    border: 2px dashed var(--border);
+    width: 100%;
+    color: var(--blue);
+    border-radius: 5px;
+}
+
+.formarea i {
+    font-size: 24px;
+}
+
+label.form-item::after {
+    content: "*";
+    color: red;
+
+}
+/***** start media *******/
+@media(max-width:992px) {
+        .breaking-form{
+        flex-direction: column;
+    }
+    
+
+}
