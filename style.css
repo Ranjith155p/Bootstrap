@@ -105,8 +105,8 @@ label.form-item::after {
 }
 
 @media(max-width:500px) {
-    .formarea {
-        padding: 1.5rem !important;
+    .breaking-form{
+        padding-left: .75rem !important;
     }
 
     .gender-collaps {
@@ -115,7 +115,7 @@ label.form-item::after {
         gap: 1.5rem !important;
     }
 
-    .date-full-width {
+    .full-width {
         width: 100% !important;
     }
 
@@ -123,8 +123,7 @@ label.form-item::after {
         width: 50% !important;
     }
 
-    .container,
-    .container-fluid {
+    .container,.container-fluid {
         padding: 0px !important;
     }
 }
