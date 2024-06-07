@@ -83,6 +83,14 @@ label.form-item::after {
     color: red;
 
 }
+input[type=checkbox]:checked {
+    background-color:var(--prm-clr) !important;
+  }
+  input[type=radio]:focus{
+    background-color:var(--prm-clr) !important;
+    color: var(--prm-clr);
+
+  }
 
 /***** start media *******/
 @media(max-width:992px) {
