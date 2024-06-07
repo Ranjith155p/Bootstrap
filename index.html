@@ -14,23 +14,22 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Bootstrap</title>
 </head>
-
 <body>
-  <section class="container-fluid bg-secondary">
+  <section class="container-fluid main-bg">
     <div class="container">
       <div class="row breaking-form column-gap-3 ">
-        <div class="col formarea d-flex flex-column row-gap-4 rounded p-3 mt-5 ">
+        <div class="col formarea d-flex flex-column row-gap-4 rounded-4 p-3 mt-5 ">
           <h3>Baisic Details</h3>
           <label for="Upload-file" class="upload-area d-flex flex-column gap-2 p-3 text-center  ">
-            <input type="file" id="Upload-file">
+            <input class="shadow-none" type="file" id="Upload-file">
             <i class="fa-solid fa-upload small-text "></i>
             <h5 class="fs-5 m-0">Upload-file</h5>
             <p class="small-text text-secondary-emphasis m-0">PNG, JPG files are allowed</p>
           </label>
-          <div class="row">
-            <div class="col-md-3">
+          <div class="row row-collaps">
+            <div class=" col-md-3">
               <label for="inputState" class="form-item">Salutation </label>
-              <select class="form-select rounded-4" aria-label="Default select example">
+              <select class="form-select border-clr rounded-4 shadow-none" aria-label="Default select example">
                 <option selected>select </option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -39,57 +38,52 @@
             </div>
             <div class="col-md">
               <label for="first-name" class="form-item">First Name </label>
-              <input type="text" class="form-control rounded-4" placeholder="John" id="first-name">
+              <input type="text" class="form-control border-clr  rounded-4 shadow-none" placeholder="John" id="first-name">
             </div>
             <div class=" col-md">
               <label for="last-name" class="form-item">Last Name </label>
-              <input type="text" class="form-control rounded-4" placeholder="Doe" id="last-name">
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="Doe" id="last-name">
             </div>
           </div>
-          <div class="row ">
+          <div class="row row-collaps">
             <div class=" col-md-6">
               <label for="e-mail" class="form-item">Email Address </label>
-              <input type="text" class="form-control rounded-4" placeholder="mail@simmmple.com" id="e-mail">
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="mail@simmmple.com" id="e-mail">
             </div>
             <div class=" col-md-6">
               <label for="ph-no" class="form-item">Mobile Number </label>
-              <input type="text" class="form-control rounded-4" placeholder="enter mobile number" id="ph-no">
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter mobile number" id="ph-no">
             </div>
           </div>
-          <div class="row align-items-center ">
-            <div class=" col-md-6">
-              <label for="e-mail" class="form-item">Date of Birth </label>
-              <input type="date" class="form-control rounded-4" placeholder="select date of birth" id="e-mail">
+          <div class="row  gender-collaps">
+            <div class=" col-6 date-full-width">
+              <label for="e-mail" class="form-item ">Date of Birth </label>
+              <input type="date" class="form-control rounded-4 shadow-none" placeholder="select date of birth" id="e-mail">
             </div>
-            <div class=" col-sm-6 ">
-              <div class="row">
-                <label for="ph-no" class="form-item">Gender </label>
-                <div class="col-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
-                    <label class="form-check-label" for="male">Male</label>
-                  </div>
+            <div class=" col-6 ">
+              <label for="ph-no" class="form-item pb-3">Gender </label>
+            <div class="row  align-items-center ">
+                  <div class=" col-3 gap-2 half-width d-flex text-center  ">
+                    <input class="form-check-input p-2 shadow-none" type="radio"  name="gender" id="male" value="male" required>
+                    <label class="form-check-label p-0" for="male">Male</label>
                 </div>
-                <div class="col-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
-                    <label class="form-check-label" for="female">Female</label>
-                  </div>
-                </div>
-
+                <div class=" col-4 half-width gap-2 d-flex align-items-center ">
+                  <input class="form-check-input p-2 shadow-none" type="radio"  name="gender" id="male" value="male" required>
+                  <label class="form-check-label p-0" for="male">Female</label>
+              </div>
               </div>
             </div>
           </div>
           <div class="row ">
             <div class=" col">
               <label for="Address" class="form-item">enter address </label>
-              <input type="text" class="form-control rounded-4" placeholder=" Enter Address" id="Address">
+              <input type="text" class="form-control shadow-none rounded-4" placeholder=" Enter Address" id="Address">
             </div>
           </div>
-          <div class="row ">
+          <div class="row row-collaps">
             <div class=" col-md-6">
               <label for="e-mail" class="form-item">Contry</label>
-              <select class="form-select rounded-4" aria-label="Default select example">
+              <select class="form-select rounded-4 shadow-none" aria-label="Default select example">
                 <option selected> select contry </option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -98,7 +92,7 @@
             </div>
             <div class=" col-md-6">
               <label for="state" class="form-item"> State </label>
-              <select class="form-select rounded-4" aria-label="Default select example">
+              <select class="form-select rounded-4 shadow-none" aria-label="Default select example">
                 <option selected> select state </option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -106,20 +100,20 @@
               </select>
             </div>
           </div>
-          <div class="row ">
+          <div class="row row-collaps ">
             <div class=" col-md-6">
-              <label for="e-mail" class="form-item">enter City </label>
-              <input type="text" class="form-control rounded-4" placeholder="enter city" id="e-mail">
+              <label for="e-mail" class="form-item">City </label>
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter city" id="e-mail">
             </div>
             <div class=" col-md-6">
-              <label for="ph-no" class="form-item"> enter Zip/Pin </label>
-              <input type="text" class="form-control rounded-4" placeholder="enter zip/pin" id="ph-no">
+              <label for="ph-no" class="form-item">Zip/Pin </label>
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter zip/pin" id="ph-no">
             </div>
           </div>
 
 
         </div>
-        <div class="col  formarea d-flex flex-column row-gap-4 rounded common-fontsize mt-5  p-3">
+        <div class="col  formarea d-flex flex-column row-gap-4 rounded-4 common-fontsize mt-5  p-3">
           <h3>Advanced Details</h3>
           <div class="alert alert-warning m-0" role="alert">
             <h5> A simple warning alert—check it out!</h5>
@@ -129,67 +123,73 @@
             </p>
           </div>
           <div class="row align-items-center">
+            <div class="col-6">
+            <div class="row align-items-center">
+              <label for="weight" class="form-item p-0">height</label>
+            <div class="col-sm-8 d-flex align-items-center">
+              <input type="range" class="form-range shadow-none" id="weight">
+            </div>
             <div class="col-sm-4">
-              <label for="weight" class="form-item">height</label>
-              <input type="range" class="form-range" id="weight">
-            </div>
-            <div class="col-sm-2">
-              <input type="text" class="form-control rounded-4" placeholder="168kg" id="weight">
-            </div>
-            <div class="col-sm-4">
-              <label for="weight" class="form-item">Weight</label>
-              <input type="range" class="form-range" id="weight">
-            </div>
-            <div class="col-sm-2">
-              <input type="text" class="form-control rounded-4" placeholder="68kg" id="weight">
+              <input type="text" class="form-control rounded-4 shadow-none" value="168kg" id="weight">
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-sm-5">
-              <label for="color" class="form-item">Choose Color </label>
-              <input type="color" class="form-control " id="color">
+        </div>
+        <div class="col-6">
+          <div class="row align-items-center ">
+            <label for="weight" class="form-item shadow-none p-0">Weight</label>
+            <div class="col-sm-8 d-flex align-items-center">
+              <input type="range" class="form-range shadow-none" id="weight">
             </div>
-            <div class="col-sm-7">
-              <label for="" class="form-item">Choose Templates </label>
-              <div class="row m-0 ">
-                <div class="form-check form-check-inline  m-0  col">
-                  <label class="form-check-label" for="inlineCheckbox1">Template 1</label>
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <div class="col-sm-4">
+              <input type="text" class="form-control rounded-4 shadow-none" value="68kg" id="weight">
+            </div>
+          </div>
+        </div>
+          </div>
 
+          <div class="row row-collaps">
+            <div class="col-sm-5 color-full-width">
+              <label for="color" class="form-item">Choose Color </label>
+              <input type="color" class="form-control-color  p-1 rounded-4 shadow-none " id="color">
+            </div>
+            <div class="col-7 color-full-width ">
+              <label for="" class="form-item">Choose Templates </label>
+              <div class="row m-0  align-items-center">
+                <div class="form-check form-check-inline m-0 col">
+                  <input class="form-check-input shadow-none p-1 " type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label pb-0" for="inlineCheckbox1">Template 1</label>
                 </div>
                 <div class="form-check form-check-inline m-0 col">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Template 2</label>
+                  <input class="form-check-input shadow-none p-1 " type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label pb-0" for="inlineCheckbox1">Template 2</label>
                 </div>
-                <div class="form-check form-check-inline  m-0  col">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Template 3</label>
+                <div class="form-check form-check-inline m-0 col">
+                  <input class="form-check-input shadow-none p-1 " type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label pb-0" for="inlineCheckbox1">Template 3</label>
                 </div>
               </div>
             </div>
           </div>
           <div class=" col">
             <label for="ph-no" class=""> Qualifications</label>
-            <input type="text" class="form-control rounded-4" placeholder="enter Qualifications" id="ph-no">
+            <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter Qualifications" id="ph-no">
           </div>
           <div class="col ">
             <label for="ph-no" class="form-item"> About Your Self </label>
-            <textarea class="form-control" rows="5" placeholder="enter here" aria-label="With textarea"></textarea>
+            <textarea class="form-control shadow-none" rows="6" placeholder="enter here" aria-label="With textarea"></textarea>
           </div>
           <div class="form-check form-check-inline col">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">I Accept Terms & Conditions</label>
-          </div>
+            <input class="form-check-input shadow-none p-0" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label " for="inlineCheckbox1">I Accept Terms & Conditions</label>
+          </div>             
+
         </div>
-
+         <div class="  bg-light mt-5 d-flex p-3 rounded-4 gap-4 flex-row-reverse ">
+        <button type="button" class="btn btn-primary  px-4 py-2 rounded-4 btn-md">Save Changes</button>
+        <button type="button" class="btn  btn-md  px-4 py-2 rounded-4">Cancel</button>
       </div>
-      <div class="col bg-light mt-5 d-flex p-3 rounded gap-4 flex-row-reverse ">
-        <button type="button" class="btn btn-primary btn-md">Save Changes</button>
-        <button type="button" class="btn  btn-md">Cancel</button>
-
+      
       </div>
-    </div>
   </section>
 </body>
 

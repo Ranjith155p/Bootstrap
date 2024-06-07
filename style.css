@@ -3,17 +3,53 @@
     --white: #ffffff;
     --primary-text: #2B3674;
     --border: #B2BAD0;
-    --blue: #4318FF;
-
-
+    --prm-clr: #4318FF;
 }
-*{
+
+* {
     font-size: 14px;
 }
-.small-text{
+
+body {
+    background-color: var(--gray) !important;
+}
+
+.small-text {
     font-size: 12px;
 
 }
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--prm-clr);
+    cursor: pointer;
+}
+
+label {
+    padding-bottom: 1rem !important;
+}
+
+.form-control-color {
+    width: 100% !important;
+}
+
+.main-bg {
+    background-color: var(--gray);
+}
+
+input:focus {
+    border-color: var(--prm-clr) !important;
+}
+
+select:focus {
+    border-color: var(--prm-clr) !important;
+}
+
+textarea:focus {
+    border-color: var(--prm-clr) !important;
+}
+
 #Upload-file {
     display: none;
 }
@@ -23,11 +59,19 @@
     color: var(--primary-text)
 }
 
+.radio-clr {
+    border-color: var(--prm-clr) !important;
+    color: var(--prm-clr) !important;
+}
+
+
 .upload-area {
     border: 2px dashed var(--border);
     width: 100%;
-    color: var(--blue);
+    color: var(--prm-clr);
     border-radius: 5px;
+    background-color: #FAFCFE;
+
 }
 
 .formarea i {
@@ -39,11 +83,48 @@ label.form-item::after {
     color: red;
 
 }
+
 /***** start media *******/
 @media(max-width:992px) {
-        .breaking-form{
+    .breaking-form {
         flex-direction: column;
     }
-    
+}
 
+@media(max-width:767px) {
+    .row-collaps {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+
+    .color-full-width {
+        width: 100% !important;
+
+    }
+}
+
+@media(max-width:500px) {
+    .formarea {
+        padding: 1.5rem !important;
+    }
+
+    .gender-collaps {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+
+    .date-full-width {
+        width: 100% !important;
+    }
+
+    .half-width {
+        width: 50% !important;
+    }
+
+    .container,
+    .container-fluid {
+        padding: 0px !important;
+    }
 }
