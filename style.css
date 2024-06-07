@@ -64,7 +64,6 @@ textarea:focus {
     color: var(--prm-clr) !important;
 }
 
-
 .upload-area {
     border: 2px dashed var(--border);
     width: 100%;
@@ -83,14 +82,19 @@ label.form-item::after {
     color: red;
 
 }
-input[type=checkbox]:checked {
-    background-color:var(--prm-clr) !important;
-  }
-  input[type=radio]:focus{
-    background-color:var(--prm-clr) !important;
-    color: var(--prm-clr);
 
-  }
+input[type=checkbox]:checked {
+    background-color: var(--prm-clr) !important;
+}
+
+input[type=radio]:checked {
+    background-color: var(--prm-clr) !important;
+    border: var(--prm-clr);
+}
+
+.btn-primary {
+    background-color: var(--prm-clr) !important;
+}
 
 /***** start media *******/
 @media(max-width:992px) {
@@ -113,7 +117,7 @@ input[type=checkbox]:checked {
 }
 
 @media(max-width:500px) {
-    .breaking-form{
+    .breaking-form {
         padding-left: .75rem !important;
     }
 
@@ -131,7 +135,8 @@ input[type=checkbox]:checked {
         width: 50% !important;
     }
 
-    .container,.container-fluid {
+    .container,
+    .container-fluid {
         padding: 0px !important;
     }
 }
