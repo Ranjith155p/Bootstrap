@@ -120,11 +120,17 @@ input[type=radio]:checked {
 .btn-primary {
     background-color: var(--prm-clr) !important;
 }
-
+.bottom {
+    margin-top: 1rem!important;
+}
 /***** start media *******/
 @media(max-width:992px) {
     .breaking-form {
         flex-direction: column;
+        gap:1rem !important;
+    }
+    .bottom{
+        margin: 0px !important;
     }
 }
 
