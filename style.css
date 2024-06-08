@@ -8,7 +8,7 @@
 }
 
 * {
-    font-size: 14px;
+    font-size: 14px!important;
     font-family: 'DM Sans', sans-serif;
 
 }
@@ -16,10 +16,19 @@
 body {
     background-color: var(--gray) !important;
 }
+h5{
+font-size: 16px!important;
+}
+h3{
+    font-size: 20px!important;
+    font-weight: 700 !important;
 
+}
 .small-text {
-    font-size: 12px;
-
+    font-size: 12px!important;
+}
+i{
+    font-size:24px !important;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -30,7 +39,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 label {
-    padding-bottom: 1rem !important;
+    padding-bottom: .5rem !important;
 }
 
 .form-control-color {
@@ -44,11 +53,24 @@ label {
 input:focus {
     border-color: var(--prm-clr) !important;
 }
+input{
+    font-size: 14px !important;
+    height: 50px !important;
+}
+input[type=checkbox],input[type=radio]{
+    height: 1rem !important;
 
+}
+select{
+    font-size: 14px !important;
+    height: 50px !important;
+}
 select:focus {
     border-color: var(--prm-clr) !important;
 }
-
+.weight{
+    font-weight: 700px !important;
+}
 textarea:focus {
     border-color: var(--prm-clr) !important;
 }
@@ -121,7 +143,7 @@ input[type=radio]:checked {
 
 @media(max-width:500px) {
     .breaking-form {
-        padding-left: .75rem !important;
+        padding-left: .5rem !important;
     }
 
     .gender-collaps {
