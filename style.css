@@ -146,7 +146,9 @@ input[type=radio]:checked {
 
     }
 }
-
+button{
+    font-weight: 700 !important;
+}
 @media(max-width:500px) {
     .breaking-form {
         padding-left: .5rem !important;
