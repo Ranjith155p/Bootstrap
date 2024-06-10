@@ -50,10 +50,10 @@ label {
     background-color: var(--gray);
 }
 
-input:focus {
+input:focus,select:focus,textarea:focus{
     border-color: var(--prm-clr) !important;
 }
-input{
+input,select{
     font-size: 14px !important;
     height: 50px !important;
 }
@@ -61,19 +61,17 @@ input[type=checkbox],input[type=radio]{
     height: 1rem !important;
 
 }
-select{
-    font-size: 14px !important;
-    height: 50px !important;
-}
-select:focus {
+
+/* select:focus {
     border-color: var(--prm-clr) !important;
-}
+} */
 .weight{
     font-weight: 700px !important;
 }
-textarea:focus {
+/* textarea:focus {
     border-color: var(--prm-clr) !important;
-}
+} */
+
 
 #Upload-file {
     display: none;
