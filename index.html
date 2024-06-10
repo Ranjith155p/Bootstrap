@@ -20,9 +20,9 @@
   <section class="container-fluid main-bg">
     <div class="container">
       <div class="row breaking-form column-gap-4 my-4">
-        <div class="col formarea d-flex flex-column row-gap-4 rounded-4 p-3 ">
-          <h3 class="mb-0 mt-2">Baisic Details</h3>
-          <label for="Upload-file" class="upload-area d-flex flex-column gap-2 p-3 text-center  ">
+        <div class="col formarea d-flex flex-column row-gap-4 rounded-4 p-4 ">
+          <h3 class="m-0 ">Baisic Details</h3>
+          <label for="Upload-file" class="upload-area d-flex flex-column gap-2 p-4 text-center  ">
             <input class="shadow-none" type="file" id="Upload-file">
             <i class="fa-solid fa-upload "></i>
             <h5 class="m-0">Upload-file</h5>
@@ -59,18 +59,18 @@
           </div>
           <div class="row  gender-collaps">
             <div class=" col-6 full-width">
-              <label for="e-mail" class="form-item ">Date of Birth </label>
-              <input type="date" class="form-control rounded-4 shadow-none" placeholder="select date of birth" id="e-mail">
+              <label for="date" class="form-item ">Date of Birth </label>
+              <input type="date" class="form-control rounded-4 shadow-none" placeholder="select date of birth" id="date">
             </div>
             <div class=" col-6 ">
-              <label for="ph-no" class="form-item ">Gender </label>
+              <label for="male" class="form-item ">Gender </label>
             <div class="row  align-items-center pt-3 ">
                   <div class=" col-3 gap-2 half-width mt-1 d-flex text-center  ">
                     <input class="form-check-input shadow-none " type="radio"  name="gender" id="male" value="male" required>
                     <label class="form-check-label p-0" for="male">Male</label>
                 </div>
                 <div class=" col-4 half-width gap-2 d-flex align-items-center ">
-                  <input class="form-check-input shadow-none " type="radio"  name="gender" id="female" value="male" required>
+                  <input class="form-check-input shadow-none " type="radio"  name="gender" id="female" value="female" required>
                   <label class="form-check-label p-0" for="female">Female</label>
               </div>
               </div>
@@ -78,14 +78,14 @@
           </div>
           <div class="row ">
             <div class=" col">
-              <label for="Address" class="form-item">enter address </label>
+              <label for="Address" class="form-item">Enter Address </label>
               <input type="text" class="form-control shadow-none rounded-4" placeholder=" Enter Address" id="Address">
             </div>
           </div>
           <div class="row row-collaps">
             <div class=" col-md-6">
-              <label for="e-mail" class="form-item">Contry</label>
-              <select class="form-select rounded-4 shadow-none" aria-label="Default select example">
+              <label for="contry" class="form-item">Contry</label>
+              <select class="form-select rounded-4 shadow-none" aria-label="Default select example"id="contry">
                 <option selected> select contry </option>
                 <option value="1">India</option>
                 <option value="2">Pakistan</option>
@@ -94,7 +94,7 @@
             </div>
             <div class=" col-md-6">
               <label for="state" class="form-item"> State </label>
-              <select class="form-select rounded-4 shadow-none" aria-label="Default select example">
+              <select class="form-select rounded-4 shadow-none" aria-label="Default select example" id="state">
                 <option selected> select state </option>
                 <option value="1">Kerala</option>
                 <option value="2">Tamilnadu</option>
@@ -104,19 +104,19 @@
           </div>
           <div class="row row-collaps ">
             <div class=" col-md-6">
-              <label for="e-mail" class="form-item">City </label>
-              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter city" id="e-mail">
+              <label for="city" class="form-item">City </label>
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter city" id="city">
             </div>
             <div class=" col-md-6">
-              <label for="ph-no" class="form-item">Zip/Pin </label>
-              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter zip/pin" id="ph-no">
+              <label for="pin" class="form-item">Zip/Pin </label>
+              <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter zip/pin" id="pin">
             </div>
           </div>
 
 
         </div>
-        <div class="col  formarea d-flex flex-column row-gap-4 rounded-4 common-fontsize p-3">
-          <h3 class="mb-0 mt-2">Advanced Details</h3>
+        <div class="col  formarea d-flex flex-column row-gap-4 rounded-4 common-fontsize p-4">
+          <h3 class="m-0 ">Advanced Details</h3>
           <div class="alert alert-warning m-0" role="alert">
             <h5> A simple warning alert—check it out!</h5>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. Aliquam erat
@@ -129,10 +129,10 @@
             <div class="row align-items-center">
               <label for="height" class="form-item p-0">height</label>
             <div class="col-7 d-flex  align-items-center">
-              <input type="range" class="form-range shadow-none" id="height">
+              <input type="range" class="form-range shadow-none">
             </div>
             <div class="col-5">
-              <input type="text"  class="form-control rounded-4 shadow-none" value="168kg" id="weight">
+              <input type="text"  class="form-control rounded-4 shadow-none" value="168kg" id="height">
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
           <div class="row align-items-center ">
             <label for="weight" class="form-item shadow-none p-0">Weight</label>
             <div class="col-7 d-flex align-items-center">
-              <input type="range" class="form-range shadow-none" id="weight">
+              <input type="range" class="form-range shadow-none" for="weight">
             </div>
             <div class="col-5">
               <input type="text" class="form-control rounded-4 shadow-none" value="68kg" id="weight">
@@ -148,7 +148,6 @@
           </div>
         </div>
           </div>
-
           <div class="row row-collaps">
             <div class="col-sm-5 color-full-width">
               <label for="color" class="form-item">Choose Color </label>
@@ -173,16 +172,16 @@
             </div> 
           </div>
           <div class=" col">
-            <label for="ph-no" class=""> Qualifications</label>
-            <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter qualifications" id="ph-no">
+            <label for="qualification" class=""> Qualifications</label>
+            <input type="text" class="form-control rounded-4 shadow-none" placeholder="enter qualifications" id="qualification">
           </div>
           <div class="col ">
-            <label for="ph-no" class="form-item"> About Your Self </label>
-            <textarea class="form-control shadow-none rounded-4" rows="7" placeholder="enter here" aria-label="With textarea"></textarea>
+            <label for="prs-details" class="form-item"> About Your Self </label>
+            <textarea class="form-control shadow-none rounded-4" rows="7" placeholder="enter here" aria-label="With textarea"id="prs-details"></textarea>
           </div>
           <div class="form-check form-check-inline col">
-            <input class="form-check-input shadow-none p-0" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label " for="inlineCheckbox1">I Accept Terms & Conditions</label>
+            <input class="form-check-input shadow-none p-0" type="checkbox" id="acceptence" value="option1">
+            <label class="form-check-label " for="acceptence">I Accept Terms & Conditions</label>
           </div>             
 
         </div>
